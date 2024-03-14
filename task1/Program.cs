@@ -7,14 +7,14 @@ Console.WriteLine("Введите конечное число n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
         
-    RecursiveNumbers(m,n);
+    PeriodNumbers(m,n);
 
-    static void RecursiveNumbers(int m, int n)
+    static void PeriodNumbers(int m, int n)
     {
         if (m <= n)
         {
             Console.Write(m + " ");
-            RecursiveNumbers(m + 1, n);
+            PeriodNumbers(m + 1, n);
         }
         Console.WriteLine();
     }
