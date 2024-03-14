@@ -6,22 +6,19 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите конечное число n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-        
-    PeriodNumbers(m,n);
 
-    static void PeriodNumbers(int m, int n)
+PeriodNumbers(m, n);
+ void PeriodNumbers(int m, int n)
+{
+    if (m <= n)
     {
-        if (m <= n)
-        {
-            Console.Write(m + " ");
-            PeriodNumbers(m + 1, n);
-        }
-        Console.WriteLine();
+        Console.Write(m + " ");
+        PeriodNumbers(m + 1, n);
     }
-
-
-
-
     
+}
+
+
+
 
 
