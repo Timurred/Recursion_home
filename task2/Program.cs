@@ -23,6 +23,4 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int result = AkkermanFunction(m, n);
-
-
-Console.Write($"{result}");
+Console.Write($"{result} ");
